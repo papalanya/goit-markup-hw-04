@@ -380,19 +380,28 @@ img {
 
 /* Галерея проектов */
 .gallery-list {
+  display: flex;
   flex-wrap: wrap;
 }
 .gallery-item {
-  width: 370px;
+  display: flex;
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid var(--gallery-item-border);
 }
 .gallery-item:nth-child(3n) {
   margin-right: 0;
 }
 .gallery-item:nth-child(n + 7) {
   margin-bottom: 0;
+}
+.gallery-link {
+  width: 370px;
+  border: 1px solid var(--gallery-item-border);
+}
+.gallery-link:hover,
+.gallery-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .gallery-title {
   margin-bottom: 4px;
