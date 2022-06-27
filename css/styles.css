@@ -14,6 +14,7 @@
   --dark-bg-color: #2f303a;
   --hero-btn-hover: #188ce8;
   --gallery-item-border: #eeeeee;
+  --main-icon-color: #afb1b8;
 }
 
 body {
@@ -141,6 +142,15 @@ img {
 .contact-item:last-child {
   margin-right: 0;
 }
+.icon-mail,
+.icon-smartphone {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.icon-mail:hover,
+.icon-smartphone:hover {
+  fill: currentColor;
+}
 
 /* Секция Герой */
 .hero {
@@ -153,7 +163,7 @@ img {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero-bg-.jpg);
+    url(../images/hero/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   max-width: 1600px;
